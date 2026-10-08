@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- The same arrow over something clickable: a deeper, glowing purple. -->
+  <defs>
+    <linearGradient id="lit" x1="3" y1="3" x2="27" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D9CCFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="3" y1="3" x2="13" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C4DE8"/>
+      <stop offset="1" stop-color="#4C1FA8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="15" cy="15" r="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A78BFA" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="15" cy="15" r="15" fill="url(#glow)"/>
+  <path d="M4.2 4.6 L28.4 15 L17 17 L14.6 28.6 Z" fill="#2A0F66"/>
+  <path d="M3 3 L27 13.4 L15.6 15.6 L13.2 27 Z" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M3 3 L27 13.4 L15.6 15.6 Z" fill="url(#lit)"/>
+  <path d="M3 3 L15.6 15.6 L13.2 27 Z" fill="url(#shade)"/>
+  <path d="M3.6 3.6 L15.2 15.2" stroke="#FFFFFF" stroke-opacity=".8" stroke-width=".8" stroke-linecap="round"/>
+</svg>
